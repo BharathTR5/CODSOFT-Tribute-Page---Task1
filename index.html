@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute Page</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h2>TRIBUTE PAGE</h2>
+    </div>
+
+  <div class="nav-links">
+    <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">EARLY LIFE</a></li>
+    <li><a href="#">CAREER</a></li>
+    <li><a href="#">ACHIEVEMENTS</a></li>
+    </ul>
+  </div>
+
+  <div class="hamburger">
+  <i class="fa-solid fa-bars fa-lg"></i>
+  </div>
+
+  <div class="nav-links-responsive">
+    <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">EARLY LIFE</a></li>
+    <li><a href="#">CAREER</a></li>
+    <li><a href="#">ACHIEVEMENTS</a></li>
+    </ul>
+  </div>
+
+  </nav>
+
+
+  <script src="https://kit.fontawesome.com/3e15c08414.js" crossorigin="anonymous"></script>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", () => {
+      document.querySelector(".nav-links-responsive").classList.toggle("response");
+
+    })
+
+  </script>
+</body>
+</html>
